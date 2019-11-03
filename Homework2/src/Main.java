@@ -1,3 +1,6 @@
+import java.util.Random;
+
+
 public class Main {
 
     private static void printArray(int[][] arr)
@@ -26,9 +29,10 @@ public class Main {
 
     public static void main(String[] args) {
         int[][] arr = new int[6][7];
+        Random rand = new Random();
         for (int i = 0; i < arr.length; ++i) {
             for (int j = 0; j < arr[i].length; ++j) {
-                arr[i][j] = ((int) (Math.random() * 10));
+                arr[i][j] = ((int) (rand.nextInt(10)));
             }
         }
 

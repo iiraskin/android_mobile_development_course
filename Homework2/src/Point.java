@@ -4,9 +4,9 @@ public final class Point {
 
     public Point(){}
 
-    public Point(int x_, int y_) {
-        x = x_;
-        y = y_;
+    public Point(int x, int y) {
+        this.x = x;
+        this.y = y;
     }
 
     public int getX() {
