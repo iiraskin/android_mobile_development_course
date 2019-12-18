@@ -70,32 +70,4 @@
 
     </androidx.cardview.widget.CardView>
 
-    <LinearLayout
-        android:id="@+id/linear_layout_detail"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:visibility="gone">
-
-        <ImageView
-            android:id="@+id/image_view_detail"
-            android:layout_width="203dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"
-            android:layout_weight="2"
-            android:src="#999" />
-
-        <TextView
-            android:id="@+id/text_view_detail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_weight="0.5"
-            android:text="@string/lorem_ipsum_dolor_"
-            android:textSize="12sp" />
-    </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

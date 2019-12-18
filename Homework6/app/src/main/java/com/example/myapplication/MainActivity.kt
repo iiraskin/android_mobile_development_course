@@ -3,6 +3,7 @@ package com.example.myapplication
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.content.Intent
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,12 +13,10 @@ class MainActivity : AppCompatActivity() {
 
         setTitle("Notes")
         val cardView = findViewById<View>(R.id.card_view)
-        val detailLayout = findViewById<View>(R.id.linear_layout_detail)
 
         cardView.setOnClickListener {
-            setTitle("")
-            cardView.visibility = View.GONE
-            detailLayout.visibility = View.VISIBLE
+            val intent = Intent(this, DetailActivity::class.java)
+            startActivity(intent)
         }
     }
 }
